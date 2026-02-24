@@ -25,6 +25,9 @@ export default function App() {
     <div>
       <h1>React App</h1>
 
+      <h2>API URL:</h2>
+      <p>{API_URL ?? "API_URL not set"}</p>
+
       <h2>GET Response:</h2>
       <p>{getMessage}</p>
 
