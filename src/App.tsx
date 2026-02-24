@@ -5,7 +5,8 @@ export default function App() {
   const [getMessage, setGetMessage] = useState("");
   const [postMessage, setPostMessage] = useState("");
 
-  const API_URL = import.meta.env.API_URL;
+  // Hard‑coded backend URL
+  const API_URL = "https://your-flask-service.onrender.com";
 
   useEffect(() => {
     axios
@@ -26,7 +27,7 @@ export default function App() {
       <h1>React App</h1>
 
       <h2>API URL:</h2>
-      <p>{API_URL ?? "API_URL not set"}</p>
+      <p>{API_URL}</p>
 
       <h2>GET Response:</h2>
       <p>{getMessage}</p>
