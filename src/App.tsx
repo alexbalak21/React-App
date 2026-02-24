@@ -6,7 +6,7 @@ export default function App() {
   const [postMessage, setPostMessage] = useState("");
 
   // Hard‑coded backend URL
-  const API_URL = "https://your-flask-service.onrender.com";
+  const API_URL = "https://flask-9xfl.onrender.com";
 
   useEffect(() => {
     axios
